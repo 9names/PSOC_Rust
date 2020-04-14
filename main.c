@@ -13,6 +13,10 @@
 * the software package with which this file was provided.
 ********************************************************************************/
 
+#include <stdint.h>
+// Newer versions of LD get upset when there's nothing in this region, so insert a dummy variable there.
+static volatile uint8_t dummy __attribute__ ((section(".cyeeprom"),unused));
+
 // This code is no longer required! It's just a reference now.
 // But you can uncomment this and remove the static Rust lib
 // if you have issues and want to use this for testing
