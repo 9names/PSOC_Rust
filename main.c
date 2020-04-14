@@ -13,6 +13,10 @@
 * the software package with which this file was provided.
 ********************************************************************************/
 
+// This code is no longer required! It's just a reference now.
+// But you can uncomment this and remove the static Rust lib
+// if you have issues and want to use this for testing
+/*
 #include <project.h>
 
 CY_ISR(SWPin_Control)
@@ -37,5 +41,6 @@ int main()
     
     for(;;){}
 }
+*/
 
 /* [] END OF FILE */
